@@ -1,7 +1,8 @@
 # Welcome to Project Phoenix
 
 This project is intended to be an automated config script. Currently works well with Arch Linux, i3.
-##Installation
+
+## Installation
 
 1. First you will have to clone the repository
 
