@@ -7,7 +7,9 @@
 88b,   ,a8" 88       88 "8a,   ,a8" "8b,   ,aa 88       88 88  ,d8" "8b,   
 88`YbbdP"'  88       88  `"YbbdP"'   `"Ybbd8"' 88       88 88 8P'     `Y8  
 88                                                                         
-88                                                                         
+88                  
+
+
 # Welcome to Project Phoenix
 
 This project is intended to be an automated config script. Currently works well with Arch Linux, i3.
