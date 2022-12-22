@@ -1,3 +1,4 @@
+![cover](https://library.kissclipart.com/20181216/iww/kissclipart-beak-clipart-phoenix-bird-a23be52fdba352ac.png)
 # Welcome to Project Phoenix
 
 This project is intended to be an automated config script. Currently works well with Arch Linux, i3.
