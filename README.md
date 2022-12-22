@@ -1,4 +1,13 @@
-![cover](https://library.kissclipart.com/20181216/iww/kissclipart-beak-clipart-phoenix-bird-a23be52fdba352ac.png)
+            88                                             88              
+            88                                             ""              
+            88                                                             
+8b,dPPYba,  88,dPPYba,   ,adPPYba,   ,adPPYba, 8b,dPPYba,  88 8b,     ,d8  
+88P'    "8a 88P'    "8a a8"     "8a a8P_____88 88P'   `"8a 88  `Y8, ,8P'   
+88       d8 88       88 8b       d8 8PP""""""" 88       88 88    )888(     
+88b,   ,a8" 88       88 "8a,   ,a8" "8b,   ,aa 88       88 88  ,d8" "8b,   
+88`YbbdP"'  88       88  `"YbbdP"'   `"Ybbd8"' 88       88 88 8P'     `Y8  
+88                                                                         
+88                                                                         
 # Welcome to Project Phoenix
 
 This project is intended to be an automated config script. Currently works well with Arch Linux, i3.
