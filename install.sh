@@ -1,11 +1,9 @@
 #!/bin/bash
-
-
 clear
-echo "Project Phoenix...initializing"
-echo "Welcome back Zhad."
+chmod +x stage-1.sh stage-2.sh intro.sh
 
-chmod +x stage-1.sh stage-2.sh 
+#introduction of project
+bash ./intro.sh
 
 #STAGE 1
 bash ./stage-1.sh

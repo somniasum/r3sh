@@ -1,4 +1,4 @@
 #!/bin/bash/
 #
 
-xwallpaper --center ~/Downloads/racks.jpg
+xwallpaper --maximize ~/.config/wallpaper/biker.jpg

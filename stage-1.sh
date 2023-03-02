@@ -28,6 +28,8 @@ do
 done
 
 #Ranger. A file manager
-sudo pacman -S ranger mpv neovim xwallpaper kitty starship
+sudo pacman -S man ranger mpv neovim xwallpaper kitty starship
 
+curl -o biker.jpg https://wallpapers.com/images/file/anime-minimalist-fj23wtiudgj1sgf2.jpg
+mv biker.jpg ~/.config/wallpaper/
 
