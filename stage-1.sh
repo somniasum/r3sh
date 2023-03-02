@@ -8,7 +8,6 @@ read username
 clear 
 echo "Now running Stage 1"
 
-
 #install yay
 clear
 cd /opt
@@ -21,7 +20,7 @@ clear
 cd ~/
 yay -Sy
 
-packages=('pavucontrol' 'polybar')
+packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd')
 
 for ((i=0;i<${#packages[@]};i++))
 do
@@ -29,6 +28,6 @@ do
 done
 
 #Ranger. A file manager
-sudo pacman -S ranger mpv bluez bluez-utils neovim xwallpaper ly
+sudo pacman -S ranger mpv neovim xwallpaper kitty starship
 
 
