@@ -1,7 +1,29 @@
-return require('packer').startup(function()
+require('packer').startup(function(use)
 
-	--live server
+	--Packer Nvim
+	use 'wbthomason/packer.nvim'
+
+	--Colorizer / Hex Codes
+	use 'ziontee113/color-picker.nvim'
 	
+	--Color theme
+	use 'EdenEast/nightfox.nvim'
+
+	--LSP manager
+	use 'williamboman/mason.nvim'
+
+	--LSP manager 2
+	use {'neoclide/coc.nvim', branch = 'release'}
+
+	--Autopairs 
+	use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
+	--TreeSitter for color schemes
+	use 'nvim-treesitter/nvim-treesitter'
+
+	--Live Server for web host testing
 	use({
 		"aurum77/live-server.nvim",
 		run = function()
@@ -9,62 +31,60 @@ return require('packer').startup(function()
 		end,
 		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
 	})
-	--packer can manage itself
-	use 'wbthomason/packer.nvim'
-	--color scheme
-	use 'gruvbox-community/gruvbox'
-	--notifications
-	use 'rcarriga/nvim-notify'
 
-	use 'kyazdani42/nvim-web-devicons'
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = {'kyazdani42/nvim-web-devicons', opt = true}
-	}
-	--auto-completition
+	--LSP
 	use 'ray-x/lsp_signature.nvim'
+	--Webicons for webdev
+	use 'kyazdani42/nvim-web-devicons'
 
-	--coc
-        use {'neoclide/coc.nvim', branch = 'release'}
+	--Hexcode colorizer
+	use 'norcalli/nvim-colorizer.lua'
+
+	--File manager
+	use 'nvim-tree/nvim-tree.lua'
+
+	--Multi line edit tool
+	use 'mg979/vim-visual-multi'
+
+	--Welcome Screen / Greeter
+	use {
+    'goolord/alpha-nvim',
+    requires = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
+}
 	
-	--lsp installer new version
-	use 'williamboman/mason.nvim'
 
-	--treesitter
-        use {
-            'nvim-treesitter/nvim-treesitter',
-            run = ':TSUpdate'
-        }
-	--auto pairs
-	use {"windwp/nvim-autopairs"}
+	--Snippet 
+	use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+})
 
-	--NigthFox for colorscheme
-	use "EdenEast/nightfox.nvim" 
-
-	--Barbar
+	--Telescope / file finder
 	use {
-             'romgrk/barbar.nvim',
-              requires = {'kyazdani42/nvim-web-devicons', opt = true}
-        }
-	use {
-            'nvim-tree/nvim-tree.lua',
-             requires = {
-                      'nvim-tree/nvim-web-devicons', -- optional, for file icons
-             },
-             tag = 'nightly' -- optional, updated every week. (see issue #1193)
-        }
-	use 'mfussenegger/nvim-dap'
+  'nvim-telescope/telescope.nvim', tag = '0.1.2',
+-- or                            , branch = '0.1.x',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
 
-	--dashboard
+
+
+
+	--StatusLine
 	use {
- 	 	'glepnir/dashboard-nvim',
-  		event = 'VimEnter',
-  	config = function()
-    		require('dashboard').setup {
-      		-- config
-    		}
-  		end,
-  		requires = {'nvim-tree/nvim-web-devicons'}
-	}
+                 'nvim-lualine/lualine.nvim',
+                 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        }
+
+
+
+
 
 end)
+
+

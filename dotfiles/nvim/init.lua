@@ -1,31 +1,47 @@
+local api = vim.api
+local cmd = vim.cmd
+local keymap = vim.api.nvim_set_keymap
 
 vim.g.mapleader = " "
-vim.api.nvim_set_keymap('i', 'ii', '<ESC>', {noremap = true})
-vim.notify = require("notify")
 vim.o.relativenumber = true
 
---all the calls
 
+
+local opts = { noremap = true, silent = true }
+local expr_opts = { noremap = true, expr = true, silent = true }
+
+
+--Keymappings
+--For opening NvimTree
+keymap('n', '<Leader>tt', ':NvimTreeToggle<CR>', opts)
+--For saving 
+keymap('n', '<Leader>w', ':w<CR>', opts)
+--For exiting 
+keymap('n', '<Leader>q', ':q<CR>', opts)
+--For saving then quiting
+keymap('n', '<Leader>wq', ':wq<CR>', opts)
+--For PackerSync
+keymap('n', '<Leader>we', ':PackerSync<CR>', opts)
+
+
+
+
+--To call all packages
 require('packages')
-
-require("mason").setup({
-    ui = {
-        icons = {
-            package_installed = "✓",
-            package_pending = "➜",
-            package_uninstalled = "✗"
-        }
-    }
-})
-
---keymappings
-vim.api.nvim_set_keymap("n", '<leader>t', ':NvimTreeToggle<cr>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", '<leader>c', '<C-W>', {noremap = true, silent = true})
-require('treesitter-config')
-require('lualine-config')
-require('nightfox-config')
-require('barbar-config')
-require('nvimtree')
-require('nvim-debugger')
+require('nightfox-theme')
+require('mason-lsp')
+require('coc-nvim')
 require('live-server')
---require('dashboard')
+require('colorizer-config')
+require('treesitter')
+--require('autopairs')
+require('lspconfig')
+require('lualine-config')
+--require('format-config')
+require('nvimtree-config')
+require('telescope-config')
+require('snippet-config')
+
+
+
+

@@ -1,19 +1,15 @@
 #!/bin/bash
-#
-echo "Starting STAGE 2"
-echo "...making directories"
+#author: Zv74D
+#Stage 2: Arranging files 
 
-mv dotfiles/* ~/.config/
-mv .bashrc ~/.bashrc
-#cd dotfiles
 
-#dir=('i3' 'kitty' 'nvim' 'picom' 'polybar' 'rofi' 'wallpaper' 'ranger')
+mv ./dotfiles/.bashrc ~/
 
-#for ((i=0; i<${#dir[@]}; i++))
-#do
-#	mkdir ~/.config/${dir[$i]}
-#	mv ${dir[$i]} ~/.config/${dir[$i]}
-#	echo "Directory ${dir[$i]} made succesfully."
-#done
+#move everything else to the config directory
+rm README.md ; mv ./* ~/.config/
 
+curl -o ./biker.jpg https://wallpapers.com/images/file/anime-minimalist-fj23wtiudgj1sgf2.jpg
+mv ./biker.jpg ~/.config/wallpaper
+
+echo "To setup neovim just press 'Space + we' in Normal mode"
 

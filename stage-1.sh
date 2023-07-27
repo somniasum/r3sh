@@ -1,6 +1,6 @@
 #!/bin/bash
-
-
+#author: Zv74D
+#Stage 1 is the installtion process
 #Installation of the important packages
 
 echo "What is your username?"
@@ -20,16 +20,15 @@ clear
 cd ~/
 yay -Sy
 
-packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd')
+#to install packages by using the aur manager
+packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code')
 
 for ((i=0;i<${#packages[@]};i++))
 do
 	yay -S ${packages[$i]}
 done
 
-#Ranger. A file manager
-sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh
+#All needed packags using pacman
+sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox 
 
-curl -o biker.jpg https://wallpapers.com/images/file/anime-minimalist-fj23wtiudgj1sgf2.jpg
-mv biker.jpg ~/.config/wallpaper/
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-chmod +x stage-1.sh stage-2.sh intro.sh
+chmod +x ./*/*.sh
 
 #introduction of project
 bash ./intro.sh
