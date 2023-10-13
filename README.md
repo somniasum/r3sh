@@ -9,7 +9,7 @@ This project is intended to be an automated config script. Currently works well 
 ### 1. First you will have to clone the repository
 
 ```bash
-git clone https://github.com/Zv74D/project-phoenix
+git clone https://github.com/somniasum/project-phoenix
 ```
 
 ### 2. Then give execution permission to install the entire program
