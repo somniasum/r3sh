@@ -20,7 +20,7 @@ cd ~/
 yay -Sy
 
 #to install packages by using the aur manager
-packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code' 'spotify')
+packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code' 'spotify' 'nvim-packer-git')
 
 for ((i=0;i<${#packages[@]};i++))
 do
@@ -30,6 +30,5 @@ done
 #All needed packags using pacman
 sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox starship qbittorrent fzf
 
-echo "eval "$(starship init bash)"" >> .bashrc 
 
 
