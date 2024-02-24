@@ -1,12 +1,11 @@
 #!/bin/bash
-#author: Zv74D
+#author: somniasum
 #Stage 1 is the installtion process
 #Installation of the important packages
 
-echo "What is your username?"
-read username
 clear 
 echo "Now running Stage 1"
+sleep 3s 
 
 #install yay
 clear
@@ -21,7 +20,7 @@ cd ~/
 yay -Sy
 
 #to install packages by using the aur manager
-packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code')
+packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code' 'spotify')
 
 for ((i=0;i<${#packages[@]};i++))
 do
@@ -29,6 +28,8 @@ do
 done
 
 #All needed packags using pacman
-sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox 
+sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox starship qbittorrent fzf
+
+echo "eval "$(starship init bash)"" >> .bashrc 
 
 

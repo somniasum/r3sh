@@ -1,12 +1,12 @@
 #!/bin/bash
-#author: Zv74D
+#author: somniasum
 #Stage 2: Arranging files 
 
 
-mv ./dotfiles/.bashrc ~/
+mv ./dotfiles/.bashrc ~/.bashrc
 
 #move everything else to the config directory
-rm README.md ; mv ./* ~/.config/
+rm README.md ; mv ./dotfiles/* ~/.config/
 
 curl -o ./biker.jpg https://wallpapers.com/images/file/anime-minimalist-fj23wtiudgj1sgf2.jpg
 mv ./biker.jpg ~/.config/wallpaper
