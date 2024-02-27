@@ -1,4 +1,0 @@
-#!/bin/bash
-#
-
-coreshot -w
