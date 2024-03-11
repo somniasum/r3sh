@@ -14,7 +14,7 @@ git clone https://github.com/somniasum/project-phoenix
 
 ### 2. Then give execution permission to install the entire program
 ```bash
-cd project-phoenix/Installation
+cd project-phoenix/Main
 chmod +x install.sh
 ```
 ### 3.Finally run the script.
