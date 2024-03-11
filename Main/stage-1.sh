@@ -18,7 +18,7 @@ cd ~/
 yay -Sy
 
 #to install packages by using the aur manager
-packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code' 'spotify' 'nvim-packer-git')
+packages=('pavucontrol' 'polybar' 'ttf-firacode-nerd' 'brave-browser' 'ttf-cascadia-code' 'spotify' 'nvim-packer-git' 'brillo' 'tor-browser-bin')
 
 for ((i=0;i<${#packages[@]};i++))
 do

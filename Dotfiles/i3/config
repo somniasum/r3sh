@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:CascadiaCode 16
+font pango:CascadiaCode 20
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -183,7 +183,7 @@ bindsym $mod+r mode "resize"
 
 #To set the color
 # class                 border  backgr. text    indicator child_border
-client.focused          #9999ff #285577 #ffffff #2e9ef4   #285577
+client.focused          #ffffff #000000 #ffffff #ffffff   #373B4d
 client.focused_inactive #333333 #000000 #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -193,10 +193,10 @@ client.background       #ffffff
 
 #To set the other color
 set $bg-color #2f343f
-set $inactive-bg-color #00 
+set $inactive-bg-color #000000 
 set $text-color #f3f4f5
 set $inactive-text-color #676E7D
-set $urgent-bg-color #E59935
+set $urgent-bg-color #373B4a
 
 #to open file manager
 
@@ -214,11 +214,6 @@ exec bash ~/.config/wallpaper/launch.sh
 #exec bash ~/wall.sh
 exec --no-startup-id ~/.config/polybar/launch.sh 
 
-#ScreenShots 
-
-bindsym --release $mod+o exec coreshot -w
-bindsym --release $mod+p exec coreshot -f
-bindsym --release $mod+x exec coreshot -s
 
 #ranger
 bindsym --release $mod+m exec l
@@ -245,6 +240,13 @@ bindsym --release $mod+g exec ~/.config/Light/stop.sh
 
 #Start Ranger
 bindsym --release $mod+t exec ~/.config/FM/start.sh
+
+#Brightness
+#increase
+bindsym --release $mod+p exec brillo -q -A 1
+
+#decrease
+bindsym --release $mod+o exec brillo -a -U 1
 
 
 #alias
