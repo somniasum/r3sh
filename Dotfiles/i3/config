@@ -193,7 +193,7 @@ client.background       #ffffff
 
 #To set the other color
 set $bg-color #2f343f
-set $inactive-bg-color #000000 
+set $inactive-bg-color #ffffff 
 set $text-color #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color #373B4a
