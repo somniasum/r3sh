@@ -212,7 +212,7 @@ exec bash ~/.config/wallpaper/launch.sh
 #polybar
 #exec bash ~/wallpaper/watchdogs.sh/ 
 #exec bash ~/wall.sh
-exec --no-startup-id ~/.config/polybar/launch.sh 
+exec --no-startup-id ~/.config/polybar/launch 
 
 
 #ranger

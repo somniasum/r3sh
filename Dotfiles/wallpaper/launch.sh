@@ -1,3 +1,3 @@
 #!/bin/bash
 
-xwallpaper --maximize ~/.config/wallpaper/dark.jpg
+xwallpaper --maximize ~/.config/wallpaper/fish2.png
