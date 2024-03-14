@@ -1,5 +1,5 @@
 #!/bin/bash
-#author: Zv74D
+#author: somniasum
 #
 
 source animate.sh

@@ -24,3 +24,5 @@ chmod +x install.sh
 
 Once the script is finished running you will have to log out then back in again.
 
+
+Credits to https://github.com/Haruzona or known as "p3nguin" for the polybar configuration
