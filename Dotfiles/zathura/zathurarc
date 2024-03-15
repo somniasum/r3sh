@@ -1,0 +1,48 @@
+# ~/.config/zathura/zathurarc
+
+# Set the default zoom level
+set zoom "fit-width"
+
+# Set the default page layout
+set page-mode single
+
+# Use relative path for the document index
+set use-external-links false
+
+# Use a dark color scheme
+set recolor true
+set recolor-darkcolor "#FFFFFF"
+set recolor-lightcolor "#2E2E2E"
+
+# Display page number and total pages in the status bar
+set statusbar-basename false
+set statusbar-page-number true
+set statusbar-highlight-link false
+
+# Customize key bindings
+map <C-j> scroll half-down
+map <C-k> scroll half-up
+map <C-h> scroll -1
+map <C-l> scroll 1
+map <C-u> scroll -1
+map <C-d> scroll 1
+map <C-f> scroll 1
+map <C-b> scroll -1
+map <C-w> toggle-page-mode
+map <C-r> rotate 90
+
+# Customize appearance
+set adjust-opens a4
+set synctex true
+
+# Enable automatic reload of changed files
+set synctex-editor-command "gvim --remote-silent +"
+set check-xdg-open false
+
+# Set default colors
+set default-bg black
+set default-fg white
+set statusbar-bg black
+set statusbar-fg white
+set inputbar-bg black
+set inputbar-fg white

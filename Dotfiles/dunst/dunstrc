@@ -95,7 +95,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#000000"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -470,3 +470,7 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+#
+[battery]
+
+command = ~/.config/dunst/notifications.sh "%s"

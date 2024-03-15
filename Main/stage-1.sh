@@ -2,6 +2,9 @@
 #author: somniasum
 #Stage 1 is the installtion process
 #Installation of the important packages
+#
+
+
 clear
 read -p "Enter your username: " username
 
@@ -28,7 +31,7 @@ do
 done
 
 #All needed packags using pacman
-sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox qbittorrent fzf dunst rofi 
+sudo pacman -S man ranger mpv neovim xwallpaper kitty starship feh git bluez bluez-utils nodejs rust firefox qbittorrent fzf dunst rofi texlive-basic 
 
 
 
