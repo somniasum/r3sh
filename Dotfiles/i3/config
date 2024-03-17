@@ -208,7 +208,9 @@ bindsym $mod+q exec "rofi -show drun"
 #wallpaper
 #exec bash ~/wallpaper/wallpaper.sh && sleep 1 && picom
 #exec_always nitrogen --restore
-exec bash ~/.config/wallpaper/launch.sh
+exec bash ~/.config/wallpaper/fedora_launch.sh
+exec bash ~/.config/wallpaper/arch_launch.sh
+
 #polybar
 #exec bash ~/wallpaper/watchdogs.sh/ 
 #exec bash ~/wall.sh

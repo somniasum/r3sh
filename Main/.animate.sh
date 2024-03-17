@@ -19,5 +19,4 @@ bar() {
 }
 
 # Call the animation function
-animate
 

@@ -12,15 +12,12 @@ This project is intended to be an automated config script. Currently works well 
 git clone https://github.com/somniasum/r3sh
 ```
 
-### 2. Then give execution permission to install the entire program
+### 2. Then give execution permission and run with sudo for it to work properly on Fedora. 
 ```bash
 cd r3sh/Main
-chmod +x install.sh
+sudo ./r3sh.sh 
 ```
 ### 3.Finally run the script.
-```bash
-./install.sh
-```
 
 Once the script is finished running you will have to log out then back in again.
 
