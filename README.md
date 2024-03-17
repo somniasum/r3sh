@@ -1,6 +1,6 @@
  
 
-# Welcome to Project Phoenix
+# Welcome to r3sh (Rice-3-sh)
 
 This project is intended to be an automated config script. Currently works well with Arch Linux, i3.
 
