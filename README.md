@@ -9,12 +9,12 @@ This project is intended to be an automated config script. Currently works well 
 ### 1. First you will have to clone the repository
 
 ```bash
-git clone https://github.com/somniasum/project-phoenix
+git clone https://github.com/somniasum/r3sh
 ```
 
 ### 2. Then give execution permission to install the entire program
 ```bash
-cd project-phoenix/Main
+cd r3sh/Main
 chmod +x install.sh
 ```
 ### 3.Finally run the script.
