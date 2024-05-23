@@ -250,6 +250,9 @@ bindsym --release $mod+p exec ~/.config/keyboard_led.sh -p
 #decrease
 bindsym --release $mod+o exec ~/.config/keyboard_led.sh -o  
 
+#bluetooth
+
+bindsym --release $mod+t exec ~/.config/bluetooth.sh 
 
 #alias
 exec bash alias tor=bash ~/.config/tor_sc/launch.sh

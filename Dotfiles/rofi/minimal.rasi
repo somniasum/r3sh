@@ -1,0 +1,86 @@
+/*
+author: somniasum
+*/
+
+configuration {
+  font: "CascadiaCode 14";
+  
+  drun {
+    display-name: "";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "";
+    xy: 100;
+
+  }
+
+  timeout {
+    delay: 20;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 2px;
+  padding: 0;
+  spacing: 0;
+
+  bg: #000000;
+  bg-alt: #232323;
+  fg: #FFFFFF;
+  fg-alt: #424242;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  width: 420;
+  border-radius: 0;
+  location: 3;
+  yoffset: -30;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  location: 3;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+entry {
+  padding: 12px 0;
+}
+
+prompt {
+  padding: 12px;
+}
+
+listview {
+  lines: 1;
+  columns: 1;
+  location: center;
+}
+
+element {
+  children: [element-text];
+  spacing: 16px;
+}
+
+element-text {
+  padding: 12px;
+  text-color: @fg-alt;
+}
+
+element-text selected {
+  text-color: @fg;
+}
