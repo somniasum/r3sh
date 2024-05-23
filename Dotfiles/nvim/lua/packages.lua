@@ -18,8 +18,8 @@ require('packer').startup(function(use)
 	--Autopairs 
 	use {
 	"windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-}
+    	config = function() require("nvim-autopairs").setup {} end
+	}
 	--TreeSitter for color schemes
 	use 'nvim-treesitter/nvim-treesitter'
 
@@ -48,12 +48,12 @@ require('packer').startup(function(use)
 
 	--Welcome Screen / Greeter
 	use {
-    'goolord/alpha-nvim',
-    requires = { 'nvim-tree/nvim-web-devicons' },
-    config = function ()
+    	'goolord/alpha-nvim',
+  	requires = { 'nvim-tree/nvim-web-devicons' },
+    	config = function ()
         require'alpha'.setup(require'alpha.themes.startify'.config)
-    end
-}
+    	end
+	}
 	
 
 	--Snippet 
@@ -63,17 +63,14 @@ require('packer').startup(function(use)
 	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 	-- install jsregexp (optional!:).
 	run = "make install_jsregexp"
-})
+	})
 
 	--Telescope / file finder
 	use {
-  'nvim-telescope/telescope.nvim', tag = '0.1.2',
--- or                            , branch = '0.1.x',
-  requires = { {'nvim-lua/plenary.nvim'} }
-}
-
-
-
+	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
+	-- or                            , branch = '0.1.x',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+	}
 
 	--StatusLine
 	use {
@@ -81,10 +78,21 @@ require('packer').startup(function(use)
                  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
         }
 
+	--OneDarkPro theme
+	use "olimorris/onedarkpro.nvim"
 
+	--notify
+	use 'rcarriga/nvim-notify'
 
-
-
+	--lazygit
+	-- nvim v0.7.2
+	use({
+    		"kdheepak/lazygit.nvim",
+    	-- optional for floating window border decoration
+    		requires = {
+        	"nvim-lua/plenary.nvim",
+    		},
+	})
 end)
 
 

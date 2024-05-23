@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash 
+set -euo
 #author: somniasum
-
-
-
 #Stage 1 is the installtion process
 #Installation of the important packages
 

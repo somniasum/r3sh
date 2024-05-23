@@ -5,7 +5,7 @@ end
 
 live_server.setup({
   port = 8080,
-  browser_command = "brave", -- Empty string starts up with default browser
+  browser_command = "firefox", -- Empty string starts up with default browser
   quiet = false,
   no_css_inject = true, -- Disables css injection if true, might be useful when testing out tailwindcss
 })

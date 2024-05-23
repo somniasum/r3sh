@@ -6,14 +6,20 @@ vim.g.mapleader = " "
 vim.o.relativenumber = true
 
 
-
 local opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
+--notify
+--vim.notify = require("notify")
 
---Keymappings
+--Keykeymappings
 --For opening NvimTree
-keymap('n', '<Leader>tt', ':NvimTreeToggle<CR>', opts)
+keymap('n', '<Leader>tt', ':NvimTreeOpen<CR>', opts)
+--For closing NvimTree 
+keymap('n', '<Leader>ty', ':NvimTreeClose<CR>', opts)
+--For toggling NvimTree
+keymap('n', '<Leader>tr', ':NvimTreeToggle<CR>', opts)
+
 --For saving 
 keymap('n', '<Leader>w', ':w<CR>', opts)
 --For exiting 
@@ -25,10 +31,9 @@ keymap('n', '<Leader>we', ':PackerSync<CR>', opts)
 
 
 
-
 --To call all packages
 require('packages')
-require('nightfox-theme')
+--require('nightfox-theme')
 require('mason-lsp')
 require('coc-nvim')
 require('live-server')
@@ -41,7 +46,8 @@ require('lualine-config')
 require('nvimtree-config')
 require('telescope-config')
 require('snippet-config')
-
-
+require('onedark-theme')
+require('notify-config')
+require('lazygit')
 
 

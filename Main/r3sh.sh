@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+set -euo
+
 
 #Automatically indentify the type of distro being used
 

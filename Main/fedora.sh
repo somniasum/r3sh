@@ -1,5 +1,6 @@
-#!/bin/bash 
-#
+#!/usr/bin/env bash 
+
+set -euo
 
 #To set the sudo password
 echo "[sudo] Enter password for $(whoami). To be used in sudo commands: "
@@ -42,6 +43,10 @@ stage_1_fedora(){
 		"sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo"
 		"sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc"
 		"sudo dnf install brave-browser"
+
+		#installing lazygit
+		"sudo dnf copr enable atim/lazygit -y"
+		"sudo dnf install lazygit"
 
 		#To update npm and install live-server
 		"npm install -g npm@latest"

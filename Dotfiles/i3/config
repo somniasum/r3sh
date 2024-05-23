@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:CascadiaCode 20
+font pango:CaskaydiaCoveNerdFont 20
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -200,7 +200,9 @@ set $urgent-bg-color #373B4a
 
 #to open file manager
 
-bindsym $mod+m exec ranger
+bindsym $mod+m exec brillo -q A 10
+
+bindsym $mod+n exec brillo -q U 10
 
 #rofi keybindings with Win + Q
 bindsym $mod+q exec "rofi -show drun"
@@ -209,8 +211,6 @@ bindsym $mod+q exec "rofi -show drun"
 #exec bash ~/wallpaper/wallpaper.sh && sleep 1 && picom
 #exec_always nitrogen --restore
 exec bash ~/.config/wallpaper/fedora_launch.sh
-exec bash ~/.config/wallpaper/arch_launch.sh
-
 #polybar
 #exec bash ~/wallpaper/watchdogs.sh/ 
 #exec bash ~/wall.sh
@@ -224,7 +224,7 @@ bindsym --release $mod+m exec l
 bindsym --release $mod+q+c exec rofi -show calc -no-show-match -no-sort 
 
 #picom 
-exec bash ~/.config/picom/launch.sh 
+#exec bash ~/.config/picom/launch.sh 
 #hide the borders
 default_border pixel 2
 
@@ -237,18 +237,18 @@ smart_borders on
 #lock rofi
 bindsym --release $mod+b exec ~/.config/rofi/rofi.sh
 #for light-keyboard
-bindsym --release $mod+y exec ~/.config/Light/start.sh
-bindsym --release $mod+g exec ~/.config/Light/stop.sh
+bindsym --release $mod+y exec scrot -s
+bindsym --release $mod+g exec ~/.config/rofi/wifi.sh
 
 #Start Ranger
 bindsym --release $mod+t exec ~/.config/FM/start.sh
 
 #Brightness
 #increase
-bindsym --release $mod+p exec brillo -q -A 1
+bindsym --release $mod+p exec ~/.config/keyboard_led.sh -p
 
 #decrease
-bindsym --release $mod+o exec brillo -a -U 1
+bindsym --release $mod+o exec ~/.config/keyboard_led.sh -o  
 
 
 #alias
