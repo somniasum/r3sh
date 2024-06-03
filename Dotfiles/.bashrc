@@ -4,9 +4,10 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-alias lk='xset led'
-alias lo='xset -led'
 alias fman='compgen -c | fzf | xargs man'
+alias config='bash ~/.config/i3/.config.sh'
+
+#starship initialization
 eval "$(starship init bash)"
 
 alias ls='ls --color=auto'

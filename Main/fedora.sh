@@ -27,7 +27,7 @@ stage_1_fedora(){
 		"sudo dnf install fedora-workstation-repositories"
 
 		#To install the needed packages for the rice
-		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs"
+		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr"
 		"sudo dnf install ffmpeg --allowerasing"
 
 		#To install multimedia drivers and video codecs

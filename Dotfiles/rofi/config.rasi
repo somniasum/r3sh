@@ -1,8 +1,1 @@
-//@theme "/usr/share/rofi/themes/Arc.rasi"
-//@theme "/usr/share/rofi/themes/DarkBlue.rasi"
-//@theme "/home/zhad/.local/share/rofi/themes/squared-nord.rasi"
-
-
-//@theme "/home/zhad/.local/share/rofi/themes/spotlight-dark.rasi"
-
 @theme "~/.config/rofi/minimal.rasi"
