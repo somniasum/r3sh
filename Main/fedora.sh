@@ -27,7 +27,7 @@ stage_1_fedora(){
 		"sudo dnf install fedora-workstation-repositories"
 
 		#To install the needed packages for the rice
-		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr"
+		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr mpd fish cava"
 		"sudo dnf install ffmpeg --allowerasing"
 
 		#To install multimedia drivers and video codecs
@@ -99,6 +99,10 @@ stage_2_fedora(){
 		sleep 3
 		exit
 	fi
+
+	clear
+	echo "Now changing default shell to fish"
+	chsh -s /usr/local/bin/fish
 }
 
 stage_1_fedora
