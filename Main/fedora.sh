@@ -27,7 +27,7 @@ stage_1_fedora(){
 		"sudo dnf install fedora-workstation-repositories"
 
 		#To install the needed packages for the rice
-		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr mpd fish cava"
+		"sudo dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr mpd fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip"
 		"sudo dnf install ffmpeg --allowerasing"
 
 		#To install multimedia drivers and video codecs
@@ -44,16 +44,14 @@ stage_1_fedora(){
 		"sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc"
 		"sudo dnf install brave-browser"
 
-		#installing lazygit
-		"sudo dnf copr enable atim/lazygit -y"
-		"sudo dnf install lazygit"
-
 		#To update npm and install live-server
 		"npm install -g npm@latest"
 		"git clone https://github.com/tapio/live-server
 		cd live-server
 		npm install # Local dependencies if you want to hack
 		npm install -g # Install globally"
+		
+		"pip3 install pynvim"
 	)
 
 	#To go through each sudo command, automating the input of sudo using stored password
