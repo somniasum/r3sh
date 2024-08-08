@@ -12,7 +12,7 @@ set use-external-links false
 # Use a dark color scheme
 set recolor true
 set recolor-darkcolor "#FFFFFF"
-set recolor-lightcolor "#2E2E2E"
+set recolor-lightcolor "#000000"
 
 # Display page number and total pages in the status bar
 set statusbar-basename false
