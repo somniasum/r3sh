@@ -14,7 +14,7 @@ git clone https://github.com/somniasum/r3sh
 
 ### 2. Then give execution permission and run the main script 
 ```bash
-cd r3sh/Main
-sudo ./r3sh.sh 
+cd r3sh
+sudo ./install.sh 
 ```
 Logout and log back in for the changes to take effect
