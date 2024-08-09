@@ -36,6 +36,9 @@ fedora(){
 			#Multimedia codecs
 			"dnf install group Multimedia"
 
+			#adding flatpak repos
+			"flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
+
 
 		)
 
