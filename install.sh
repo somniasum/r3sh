@@ -24,7 +24,7 @@ fedora(){
 
 		
 			#To install the needed packages for the rice
-			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive flatpak xset -y"
+			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive-scheme-full flatpak xset -y"
 
 			#To install multimedia drivers and video codecs
 			"dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y"
