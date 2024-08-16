@@ -93,6 +93,7 @@ require('packer').startup(function(use)
         	"nvim-lua/plenary.nvim",
     		},
 	})
+	use  'lervag/vimtex'
 end)
 
 

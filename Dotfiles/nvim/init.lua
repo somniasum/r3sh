@@ -30,7 +30,7 @@ keymap('n', '<Leader>q', ':q<CR>', opts)
 --For saving then quiting
 keymap('n', '<Leader>wq', ':wq<CR>', opts)
 --For PackerSync
-keymap('n', '<Leader>ps', ':PackerSync<CR>', opts)
+keymap('n', '<Leader>m', ':PackerSync<CR>', opts)
 --For PackerUpdate
 keymap('n', '<Leader>pu', ':PackerUpdate<CR>', opts)
 
@@ -46,7 +46,11 @@ keymap('n', '<Leader>h', ':sp<CR>', opts)
 
 --Git
 keymap("n", "<leader>gc", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
-keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "telescope git status" })
+keymap("n", "<leader>gs", "<cmd>Telescope git_status<CR>", { desc = "telescope git commits" })
+
+--Vimtex
+keymap("n", "<leader>b", "<cmd>VimtexCompile<CR>", { desc = "vimtex compilation" })
+
 --To call all packages
 require('packages')
 require('mason-lsp')
@@ -59,5 +63,5 @@ require('nvimtree-config')
 require('telescope-config')
 require('snippet-config')
 require('onedark-theme')
-
+require('vimtex')
 
