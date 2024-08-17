@@ -72,19 +72,12 @@ require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	--StatusLine
-	use {
-                 'nvim-lualine/lualine.nvim',
-                 requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-        }
-
 	--OneDarkPro theme
 	use "olimorris/onedarkpro.nvim"
 
 	--notify
 	use 'rcarriga/nvim-notify'
 
-	--lazygit
 	-- nvim v0.7.2
 	use({
     		"kdheepak/lazygit.nvim",
@@ -93,6 +86,8 @@ require('packer').startup(function(use)
         	"nvim-lua/plenary.nvim",
     		},
 	})
+
+	--vimtex for latex
 	use  'lervag/vimtex'
 end)
 

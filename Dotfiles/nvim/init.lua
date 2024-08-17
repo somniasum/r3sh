@@ -17,9 +17,9 @@ vim.o.termguicolors = true
 
 --Keykeymappings
 --For opening NvimTree
-keymap('n', '<Leader>tt', ':NvimTreeOpen<CR>', opts)
+keymap('n', '<Leader>tt', ':NvimTreeOpen<CR>', { desc = "Toggle the tree"})
 --For closing NvimTree 
-keymap('n', '<Leader>ty', ':NvimTreeClose<CR>', opts)
+keymap('n', '<Leader>ty', ':NvimTreeClose<CR>', { desc = "Closing the tree"})
 --For toggling NvimTree
 keymap('n', '<Leader>tr', ':NvimTreeToggle<CR>', opts)
 
@@ -32,7 +32,7 @@ keymap('n', '<Leader>wq', ':wq<CR>', opts)
 --For PackerSync
 keymap('n', '<Leader>m', ':PackerSync<CR>', opts)
 --For PackerUpdate
-keymap('n', '<Leader>pu', ':PackerUpdate<CR>', opts)
+keymap('n', '<Leader>mm', ':PackerUpdate<CR>', opts)
 
 --Windows
 keymap("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
@@ -41,8 +41,8 @@ keymap("n", "<C-j>", "<C-w>j", { desc = "switch window down" })
 keymap("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 
 --Window splits
-keymap('n', '<Leader>v', ':vsp<CR>', opts)
-keymap('n', '<Leader>h', ':sp<CR>', opts)
+keymap('n', '<Leader>v', ':vsp<CR>', { desc = "Split the window vertically"})
+keymap('n', '<Leader>h', ':sp<CR>', { desc = "Split the window horizontally"})
 
 --Git
 keymap("n", "<leader>gc", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
