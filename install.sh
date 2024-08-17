@@ -83,6 +83,8 @@ fedora(){
 	
 	nvim -c "PackerSync"
 
+	export EDITOR=/usr/bin/nvim
+
 }
 
 #Arch Linux installation
