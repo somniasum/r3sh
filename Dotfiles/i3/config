@@ -4,7 +4,7 @@
 set $mod Mod4
 
 # Font for window titles.
-font pango:CaskaydiaCoveNerdFont 20
+font pango:CaskaydiaCoveNerdFont-Regular 20
 #font pango:FiraCode Nerd Font 8
 
 
@@ -173,15 +173,22 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #gaps 
-gaps inner 30
+gaps inner 20
 gaps outer 5
-#smart_gaps on
+smart_gaps on
 smart_borders on
 #hide the borders
 default_border pixel 1
 
 
 #Keybindings
+
+## Screenshots
+bindsym Print exec ~/.config/i3/.screenshot.sh full
+bindsym $mod+Print exec ~/.config/i3/.screenshot.sh window  
+bindsym Shift+Print exec ~/.config/i3/.screenshot.sh select 
+
+
 
 #Brightness
 bindsym $mod+m exec ~/.config/i3/.brightness.sh increase
@@ -196,7 +203,7 @@ exec bash ~/.config/wallpaper/set.sh
 exec --no-startup-id ~/.config/polybar/launch 
 
 #picom 
-exec --no-startup-id picom 
+#exec --no-startup-id picom 
 #Wi-Fi 
 bindsym --release $mod+g exec ~/.config/rofi/wifi.sh
 
