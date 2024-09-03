@@ -5,6 +5,13 @@
 An auto rice shell script for i3-wm 
 
 Supported on Arch Linux and Fedora
+
+## Screenshots
+![ Startup Screen ](Demo/demo_1.png.png)
+![ CLI apps ](Demo/demo_2.png.png)
+
+
+
 ## Installation
 
 ### 1. First you will have to clone the repository
