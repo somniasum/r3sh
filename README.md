@@ -7,8 +7,8 @@ An auto rice shell script for i3-wm
 Supported on Arch Linux and Fedora
 
 ## Screenshots
-![ Startup Screen ](Demo/demo_1.png.png)
-![ CLI apps ](Demo/demo_2.png.png)
+![ Startup Screen ](Demo/demo_1.png)
+![ CLI apps ](Demo/demo_2.png)
 
 
 
