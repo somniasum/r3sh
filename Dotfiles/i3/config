@@ -173,9 +173,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #gaps 
-gaps inner 20
-gaps outer 5
-smart_gaps on
+gaps inner 40
+gaps outer 20
+smart_gaps off
 smart_borders on
 #hide the borders
 default_border pixel 1
