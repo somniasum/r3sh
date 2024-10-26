@@ -1,0 +1,65 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 58,
+  "width": 358,
+  "output": ["eDP-1"],
+
+
+  "modules-center": [
+  	"bluetooth",
+  	"network",
+	"battery", 
+	"pulseaudio",
+	"clock",
+	],
+
+     "network": {
+      "interface": "wlp1s0",
+      "format": "{ifname}",
+      "format-wifi": "",
+      "tooltip-format": "{essid}",
+      "format-connected": "{icon}",
+      "format-disconnected": "{icon}",
+      "max-length": 50,
+	},
+
+   "battery": {
+    "interval": 1,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "tooltip-format": "{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
+},
+    "pulseaudio": {
+      "format": "{icon}",
+      "tooltip-format": "{volume}%",
+      "format-bluetooth": "{icon}",
+      "format-muted": "󰝟",
+      "format-icons": ["", ""],
+      "on-click": "pamixer -t",
+    },
+
+    "clock": {
+      "format": "{:%H:%M}",
+      "tooltip": true,
+      "interval": 1,
+      "tooltip-format": "{:%d.%m.%Y}", 
+    },
+
+    "bluetooth": {
+    	"format": "",
+    	"format-connected": "",
+	"format-disconnected": "",
+	"tooltip-format": "{device_alias}",
+
+
+    },
+  }
+}
+

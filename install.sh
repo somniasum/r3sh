@@ -31,7 +31,7 @@ fedora(){
 			gstreamer1-plugins-good gstreamer1-plugins-ugly lame-libs -y"
 			
 			#To install the needed packages for the rice
-			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive-scheme-full flatpak xset btop maim xdotool xclip"
+			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive-scheme-full flatpak xset btop maim xdotool xclip hyprland hyprpaper pamixer"
 
 
 			#Multimedia codecs

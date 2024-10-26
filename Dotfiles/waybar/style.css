@@ -1,0 +1,12 @@
+* {
+  font-family: "monospace";
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+window#waybar {
+  background: #000000;
+}
+
