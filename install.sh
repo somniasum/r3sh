@@ -21,9 +21,11 @@ fedora(){
 	
 		#This stores all sudo commands 
 		high_commands=(
+			#Enable hyprland tools
+			"dnf copr enable solopasha/hyprland"
 
-		
-			#To install multimedia drivers and video codecs
+
+		#To install multimedia drivers and video codecs
 			"dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y"
 			"dnf install gstreamer1-libav gstreamer1-plugins-bad-free \
 			gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-extras \
@@ -31,7 +33,7 @@ fedora(){
 			gstreamer1-plugins-good gstreamer1-plugins-ugly lame-libs -y"
 			
 			#To install the needed packages for the rice
-			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive-scheme-full flatpak xset btop maim xdotool xclip hyprland hyprpaper pamixer"
+			"dnf install kitty picom ranger rofi polybar mpv neovim dunst feh nodejs xrandr fish cava zathura zathura-pdf-mupdf latexmk evince python3-pip texlive-scheme-full flatpak xset btop maim xdotool xclip hyprland hyprpaper hyprshot pamixer"
 
 
 			#Multimedia codecs

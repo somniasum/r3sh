@@ -2,13 +2,13 @@
 
 # Rice Shell
 
-An auto rice shell script for i3-wm 
+An auto rice shell script for i3-wm and Hyprland
 
 Supported on Arch Linux and Fedora
 
 ## Screenshots
-![ Startup Screen ](Demo/demo_1.png)
-![ CLI apps ](Demo/demo_2.png)
+![ Home Screen ](Demo/home.png)
+![ Windows ](Demo/windows.png)
 
 
 
