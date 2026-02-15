@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #author: somniasum
 
-feh --bg-fill ~/.config/wallpaper/wall.jpg
+feh --bg-fill ~/.config/wallpaper/pastel.png
