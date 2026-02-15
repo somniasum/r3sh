@@ -27,6 +27,29 @@ return {
     },
   },
 
+  -- LazyGit
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+    },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    keys = {
+      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
+    config = function()
+      -- Set catppuccin-mocha theme for lazygit
+      vim.g.lazygit_floating_window_scaling_factor = 0.9
+      vim.g.lazygit_floating_window_winblend = 0
+    end,
+  },
+
   -- Trouble (diagnostics viewer) - configure it
   {
     "folke/trouble.nvim",
@@ -102,6 +125,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
+      automatic_enable = true,
       ensure_installed = {
         "stylua", -- Lua formatter
         "shellcheck", -- Shell script linter
@@ -109,6 +133,7 @@ return {
         "flake8", -- Python linter
         "prettier", -- Multi-language formatter
         "eslint_d", -- JavaScript/TypeScript linter
+        "rust_analyzer", --Rust formatters
       },
     },
   },
