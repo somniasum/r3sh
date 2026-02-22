@@ -57,6 +57,9 @@ fedora() {
       #To set fonts
       cp -r Dotfiles/fonts/* /usr/share/fonts
 
+      # move zed settings
+      mkdir ~/.var/app/dev.zed.Zed/config/zed/
+      cp ~/.var/app/dev.zed.Zed/config/zed/settings.json ~/.var/app/dev.zed.Zed/config/zed/
       #Moving files to config
       cp -r Dotfiles/* ~/.config/
 

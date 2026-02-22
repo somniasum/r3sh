@@ -1,17 +1,18 @@
+// path: ~/.var/app/dev.zed.Zed/config/zed/settings.json
 {
   "calls": {
-    "mute_on_join": true,
+    "mute_on_join": true
   },
   "use_smartcase_search": true,
   "ui_font_weight": 500.0,
   "buffer_font_weight": 500.0,
   "prettier": {
-    "allowed": true,
+    "allowed": true
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 500,
-    },
+      "milliseconds": 500
+    }
   },
   "buffer_font_family": "GeistMono Nerd Font Mono",
   "icon_theme": "Colored Zed Icons Theme Light",
@@ -21,128 +22,137 @@
   "theme": {
     "mode": "light",
     "light": "macOS Classic Light",
-    "dark": "Dracula Solid",
+    "dark": "Dracula Solid"
   },
   "format_on_save": "on",
   "formatter": "auto",
   "languages": {
     "JavaScript": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "TypeScript": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JSX": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "TSX": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "HTML": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "CSS": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "SCSS": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JSON": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "JSONC": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "Markdown": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "YAML": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "GraphQL": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "Rust": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Go": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Python": {
       "format_on_save": "on",
       "formatter": {
         "external": {
           "command": "ruff",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"],
-        },
-      },
+          "arguments": [
+            "format",
+            "--stdin-filename",
+            "{buffer_path}",
+            "-"
+          ]
+        }
+      }
     },
     "Lua": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Ruby": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "PHP": {
       "format_on_save": "on",
-      "formatter": "prettier",
+      "formatter": "prettier"
     },
     "Java": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "C": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "C++": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Swift": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Kotlin": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Elixir": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "Bash": {
       "format_on_save": "on",
       "formatter": {
         "external": {
           "command": "shfmt",
-          "arguments": ["-i", "2", "-"],
-        },
-      },
+          "arguments": [
+            "-i",
+            "2",
+            "-"
+          ]
+        }
+      }
     },
     "Dockerfile": {
       "format_on_save": "on",
-      "formatter": "language_server",
+      "formatter": "language_server"
     },
     "TOML": {
       "format_on_save": "on",
-      "formatter": "language_server",
-    },
-  },
+      "formatter": "language_server"
+    }
+  }
 }
